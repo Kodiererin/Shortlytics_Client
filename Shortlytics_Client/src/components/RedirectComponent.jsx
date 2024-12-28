@@ -11,6 +11,7 @@ const RedirectComponent = () => {
     const fetchOriginalUrl = async () => {
       try {
         console.log("Fetching URL for:", shortUrl);
+        alert("Fetching Data")
         // Make a request to the backend with the shortened URL
         const response = await axios.get(`http://localhost:8080/${shortUrl}`, {
           headers: {
